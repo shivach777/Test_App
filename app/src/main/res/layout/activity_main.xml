@@ -5,54 +5,66 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
 
+        >
+
+
+<!--
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:context="example.javatpoint.com.sumoftwonumber.MainActivity">
-    <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="61dp"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="84dp"
-            tools:layout_editor_absoluteY="53dp" />
-    <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editText1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="84dp"
-            tools:layout_editor_absoluteY="127dp" />
+            android:text="Name"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/textViewName" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintVertical_bias="0.100"/>
+    <TextView
+            android:text="Password"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/textViewPW" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.200"
+            app:layout_constraintVertical_bias="0.050"/>
+
+    <EditText android:layout_width="100dp" android:layout_height="50dp"
+              android:id="@+id/EditTextName"
+              app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+              android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+              app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.6"
+              app:layout_constraintVertical_bias="0.100"/>
+
+    <EditText android:layout_width="100dp" android:layout_height="50dp"
+              android:id="@+id/EditTextPassword"
+              app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+              android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+              app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+              app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.6"
+              app:layout_constraintVertical_bias="0.243" android:inputType="number" android:hint="@string/hint"/>
+              -->
+
+
     <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/editText2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="109dp"
-            android:text="ADD"
-            tools:layout_editor_absoluteX="148dp"
-            tools:layout_editor_absoluteY="266dp" />
-</RelativeLayout>
+            android:text="Add New Item"
+            android:layout_width="399dp"
+            android:layout_height="90dp"
+
+            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintVertical_bias="0.1"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

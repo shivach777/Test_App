@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Test_App</string>
+    <string name="hint">password</string>
 </resources>
