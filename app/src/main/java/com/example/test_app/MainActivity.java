@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("Button Clicked");
-                Intent intent = new Intent(getApplicationContext(),add_item_activity.class);
+                Intent intent = new Intent(getApplicationContext(),Login.class);
                 startActivity(intent);
 
             }
