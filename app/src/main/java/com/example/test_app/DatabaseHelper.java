@@ -18,10 +18,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     // Database Name
-    private static final String DATABASE_NAME = "myTest.db";
+    private static final String DATABASE_NAME = "myDatabase.db";
 
     // User table name
-    private static final String TABLE_USER = "user";
+    private static final String TABLE_USER = "myTable";
 
     // User Table Columns names
 //    private static final String COLUMN_USER_ID = "user_id";
@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_CONFIRM_PASSWORD = "user_confirm_password";
     // create table sql query
     private String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "(" + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + "," + COLUMN_USER_CONFIRM_PASSWORD + "TEXT"+" )";
+            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + "," + COLUMN_USER_CONFIRM_PASSWORD + "TEXT" + " )";
 
     // drop table sql query
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + TABLE_USER;
@@ -178,7 +178,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // array of columns to fetch
         String[] columns = {
-                COLUMN_USER_NAME
+                COLUMN_USER_EMAIL
         };
         SQLiteDatabase db = this.getReadableDatabase();
 

@@ -79,10 +79,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             case R.id.btnRegister:
                 postDataToSQLite();
                 break;
-/*
             case R.id.lnkLogin:
                 finish();
-                break;*/
+                break;
         }
     }
 
@@ -90,10 +89,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
         if (!databaseHelper.checkUser(textInputEditTextEmail.toString().trim())) {
 
-            user.setName(textInputEditTextName.toString().trim());
-            user.setEmail(textInputEditTextEmail.toString().trim());
-            user.setPassword(textInputEditTextPassword.toString().trim());
-            user.setConfirmpassword(textInputEditTextConfirmPassword.toString().trim());
+            user.setName(textInputEditTextName.getText().toString().trim());
+            user.setEmail(textInputEditTextEmail.getText().toString().trim());
+            user.setPassword(textInputEditTextPassword.getText().toString().trim());
+            user.setConfirmpassword(textInputEditTextConfirmPassword.getText().toString().trim());
 
             databaseHelper.addUser(user);
 
