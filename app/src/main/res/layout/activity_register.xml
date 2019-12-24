@@ -61,11 +61,13 @@
 
 
         <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
-                android:text="Login" />
+                android:text="Register"
+                android:onClick="onClick"
+        />
 
         <TextView android:id="@+id/lnkLogin"
                   android:layout_width="match_parent"

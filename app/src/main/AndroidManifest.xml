@@ -9,6 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".mytest.Main3Activity">
+        </activity>
+        <activity android:name="com.test.myapp.Main2Activity">
+        </activity>
         <activity android:name=".Login">
         </activity>
         <activity android:name=".Register">

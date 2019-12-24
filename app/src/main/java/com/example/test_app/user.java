@@ -1,18 +1,18 @@
 package com.example.test_app;
 
 public class user {
-    private int id;
+    //private int id;
     private String name;
     private String email;
     private String password;
-
-    public int getId() {
+    private String confirmpassword;
+    /*public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
+    }*/
 
     public String getName() {
         return name;
@@ -36,6 +36,14 @@ public class user {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getConfirmPassword(){
+        return confirmpassword;
+    }
+
+    public void setConfirmpassword(String confirmpassword){
+        this.confirmpassword = confirmpassword;
     }
 
 }
